@@ -7,6 +7,12 @@ Ansible playbook to deploy/manage an authentication/authorization ubuntu 12.04 s
 
 [Install the dpkg_reconfigure ansible plugin](https://github.com/ginsys/ansible-plugins/blob/devel/library/dpkg_reconfigure)
 
+`git clone --recursive` 
+
+or clone normally and:
+
+`git submodule init && git submodule update`
+
 `cp -r .private.template .private`
 
 `vi .private/vars/private.yml`
