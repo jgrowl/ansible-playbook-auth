@@ -1,3 +1,5 @@
+auth_include_apt_update: True
+
 # OpenLDAP Configuration
 auth_include_ldap: True
 host: example.com

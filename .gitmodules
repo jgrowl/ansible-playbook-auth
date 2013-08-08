@@ -4,3 +4,6 @@
 [submodule "roles/krb"]
 	path = roles/krb
 	url = https://github.com/jgrowl/ansible-playbook-krb.git
+[submodule "roles/apt-update"]
+	path = roles/apt-update
+	url = https://github.com/jgrowl/ansible-playbook-apt-update.git

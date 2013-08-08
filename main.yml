@@ -8,6 +8,7 @@
   user: $global_user
   sudo: $global_use_sudo
   roles: 
+    - {role: apt-update, when: auth_include_apt_update}
     - {role: ldap, when: auth_include_ldap}
     - {role: krb, when: auth_include_krb}
   tasks:
