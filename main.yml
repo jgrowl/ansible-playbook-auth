@@ -1,5 +1,5 @@
 ---
-# This Playbook deploys ansible 
+# This Playbook deploys Authentication/Authorization system
 
 - hosts: auth
   vars_files:
