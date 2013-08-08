@@ -1,0 +1,16 @@
+host: example.com
+dc: dc=example,dc=com
+ldapPassword: yourSuperSecretPassword 
+ldapPasswordSize: 24  # The length ldapPassword
+automountMachine: nfs.example.com
+ldapServer: ldap://ldap.example.com
+gSuffix: ou=Groups
+uSuffix: ou=Users
+mSuffix: ou=Machines
+
+krbMasterPassword: myOtherSuperSecretPassword 
+realm: EXAMPLE.COM 
+kdc: kerberos.example.com
+adminServer: kerberos.example.com
+masterKdc: kerberos.example.com
+defaultDomain: example.com 

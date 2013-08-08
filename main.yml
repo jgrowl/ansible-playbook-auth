@@ -1,0 +1,15 @@
+---
+# This Playbook deploys ansible 
+
+- hosts: auth
+  user: root
+  vars_files:
+    - vars/main.yml
+    - vars/private.yml
+  #sudo: True
+  tasks:
+  - include: tasks/ldap.yml
+  - include: tasks/krb.yml
+  - include: tasks/sssd.yml
+  handlers:
+   - include: handlers/main.yml
