@@ -2,13 +2,14 @@
 # This Playbook deploys ansible 
 
 - hosts: auth
-  user: root
   vars_files:
     - vars/main.yml
     - vars/private.yml
-  #sudo: True
+  user: $global_user
+  sudo: $global_use_sudo
+  roles: 
+    - {role: ldap, when: auth_include_ldap}
   tasks:
-  - include: tasks/ldap.yml
   - include: tasks/krb.yml
   - include: tasks/sssd.yml
   handlers:
