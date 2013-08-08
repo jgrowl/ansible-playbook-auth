@@ -1,3 +1,6 @@
 [submodule "roles/ldap"]
 	path = roles/ldap
 	url = https://github.com/jgrowl/ansible-playbook-ldap.git
+[submodule "roles/krb"]
+	path = roles/krb
+	url = https://github.com/jgrowl/ansible-playbook-krb.git
