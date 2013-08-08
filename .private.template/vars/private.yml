@@ -8,6 +8,13 @@ gSuffix: ou=Groups
 uSuffix: ou=Users
 mSuffix: ou=Machines
 
+auth_include_create_user_and_groups: True 
+auth_include_create_indexes: True 
+auth_include_create_autofs: True 
+auth_include_create_automount: True 
+auth_include_create_sudo: True 
+auth_include_create_sudo_master: True 
+
 krbMasterPassword: myOtherSuperSecretPassword 
 realm: EXAMPLE.COM 
 kdc: kerberos.example.com
