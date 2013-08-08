@@ -4,12 +4,18 @@
   action: apt pkg=$item state=installed
   with_items:
     - sssd
-  tags: sssd
+  tags: 
+    - sssd
+    - auth
 
 - name: ensure sssd.conf exists
   template: src=templates/etc/sssd/sssd.conf.j2 dest=/etc/sssd/sssd.conf owner=root group=root mode=0600
-  tags: sssd
+  tags: 
+    - sssd
+    - auth
 
 - name: ensure sssd is started 
   service: name=sssd state=started
-  tags: sssd
+  tags: 
+    - sssd
+    - auth

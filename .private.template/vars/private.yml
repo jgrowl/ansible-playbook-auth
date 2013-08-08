@@ -18,6 +18,7 @@ auth_include_create_sudo: True
 auth_include_create_sudo_master: True 
 
 # Kerberos Configuration
+auth_include_krb: True
 krbMasterPassword: myOtherSuperSecretPassword 
 realm: EXAMPLE.COM 
 kdc: kerberos.example.com

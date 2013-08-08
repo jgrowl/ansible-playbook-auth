@@ -9,8 +9,8 @@
   sudo: $global_use_sudo
   roles: 
     - {role: ldap, when: auth_include_ldap}
+    - {role: krb, when: auth_include_krb}
   tasks:
-  - include: tasks/krb.yml
   - include: tasks/sssd.yml
   handlers:
    - include: handlers/main.yml
