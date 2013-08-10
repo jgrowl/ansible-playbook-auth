@@ -7,3 +7,6 @@ global_use_sudo: False
 ansible_done_dir: /etc/ansible/.done
 
 auth_done_dir: $ansible_done_dir/ldap
+
+auth_include_auth_client: True
+krb_include_krb5_conf: False  # krb5 config is handled by auth_client

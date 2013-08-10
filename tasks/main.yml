@@ -1,9 +1,1 @@
 ---
-
-- name: ldap | ensure domainadmins exists
-  template: src=root/etc/sudoers.d/domainadmins dest=/etc/sudoers.d/domainadmins owner=root group=root mode=0440
-  tags: 
-    - ldap 
-    - auth 
-
-- include: install-sssd.yml

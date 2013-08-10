@@ -7,3 +7,6 @@
 [submodule "roles/apt-update"]
 	path = roles/apt-update
 	url = https://github.com/jgrowl/ansible-playbook-apt-update.git
+[submodule "roles/auth-client"]
+	path = roles/auth-client
+	url = https://github.com/jgrowl/ansible-playbook-auth-client.git

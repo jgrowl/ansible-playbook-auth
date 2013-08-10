@@ -27,3 +27,4 @@ krb_kdc: kerberos.example.com
 krb_admin_server: kerberos.example.com
 krb_master_kdc: kerberos.example.com
 krb_default_domain: example.com 
+
