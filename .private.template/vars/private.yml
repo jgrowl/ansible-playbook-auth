@@ -1,5 +1,3 @@
-auth_include_apt_update: True
-
 # OpenLDAP Configuration
 auth_include_ldap: True
 ldap_host: example.com
@@ -12,13 +10,6 @@ ldap_g_suffix: ou=Groups
 ldap_u_suffix: ou=Users
 ldap_m_suffix: ou=Machines
 
-ldap_include_create_user_and_groups: True 
-ldap_include_create_indexes: True 
-ldap_include_create_autofs: True 
-ldap_include_create_automount: True 
-ldap_include_create_sudo: True 
-ldap_include_create_sudo_master: True 
-
 # Kerberos Configuration
 auth_include_krb: True
 krb_master_password: myKerberosSuperSecretPassword 
@@ -27,4 +18,3 @@ krb_kdc: kerberos.example.com
 krb_admin_server: kerberos.example.com
 krb_master_kdc: kerberos.example.com
 krb_default_domain: example.com 
-

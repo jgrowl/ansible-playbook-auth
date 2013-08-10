@@ -1,12 +1,23 @@
 global_user: root
 global_use_sudo: False
+global_include_apt_update: True
 
+auth_include_apt_update: True
+
+ldap_include_create_user_and_groups: True 
+ldap_include_create_indexes: True 
+ldap_include_create_autofs: True 
+ldap_include_create_automount: True 
+ldap_include_create_sudo: True 
+ldap_include_create_sudo_master: True 
+
+krb_include_krb5_conf: False  # krb5 config is handled by auth_client
+
+# Warning - Be careful changing the settings below:
+#
 # This is used to store files that indicate that an operation has been run. Note that if you change this after you have
 # run the script, you may clobber your previous install and/or other bad things. I do not know if if /etc/ansible is
 # the best place to put these files but I wanted to avoid home directories in case the user that runs ansible ever changes.
 ansible_done_dir: /etc/ansible/.done
 
 auth_done_dir: $ansible_done_dir/ldap
-
-auth_include_auth_client: True
-krb_include_krb5_conf: False  # krb5 config is handled by auth_client

@@ -8,7 +8,7 @@
   user: $global_user
   sudo: $global_use_sudo
   roles: 
-    - {role: apt-update, when: auth_include_apt_update}
+    - {role: apt-update, when: global_include_apt_update}
     - {role: auth-client/roles/sssd, when: auth_include_auth_client}
     - {role: auth-client, when: auth_include_auth_client}
     - {role: ldap, when: auth_include_ldap}
