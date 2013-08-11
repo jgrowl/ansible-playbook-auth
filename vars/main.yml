@@ -3,6 +3,7 @@ global_use_sudo: False
 global_include_apt_update: True
 
 auth_include_apt_update: True
+auth_include_auth_client: True
 
 ldap_include_create_user_and_groups: True 
 ldap_include_create_indexes: True 
