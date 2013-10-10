@@ -1,0 +1,3 @@
+if ! git ls-remote github; then
+  git remote add github https://github.com/jgrowl/ansible-playbook-auth.git 
+fi
